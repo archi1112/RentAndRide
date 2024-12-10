@@ -10,6 +10,11 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import About from "./About/About";
+import Slide from "./Slide/slide";
+
+
+
+
 
 function Body() {
   return (
@@ -34,6 +39,7 @@ function Body() {
               </p>
             </Col>
           </Row>
+          <Slide />
           <Cards />
           <Timeline />
           <Prices />
