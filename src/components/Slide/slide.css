@@ -1,0 +1,92 @@
+/* Carousel Container with fixed size */
+.carousel-container {
+  position: relative; /* To position the pseudo-element for blur effect */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%; /* Full width of the container */
+  max-width: 1200px; /* Max width for the carousel container */
+  margin-left: auto;
+  margin-right: auto; /* Center the carousel horizontally */
+  overflow: hidden; /* To prevent the blur overlay from spilling out */
+}
+
+/* Add the blurred background using ::before */
+.carousel-container::before {
+  content: ""; /* Add an empty content for the pseudo-element */
+  position: absolute; /* Position it absolutely inside the container */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit; /* Inherit the background image */
+  filter: blur(10px); /* Apply the blur effect */
+  z-index: -1; /* Place the pseudo-element behind the text and images */
+}
+
+/* Carousel Item Layout with fixed size */
+.carousel-item-content {
+  display: flex; /* Flexbox layout for horizontal alignment */
+  align-items: center; /* Center content vertically */
+  justify-content: space-between; /* Space between text and image */
+  width: 100%; /* Ensure the container takes up full width of the carousel */
+  height: 400px; /* Fixed height for carousel */
+}
+
+/* Text styling */
+.carousel-text {
+  flex: 1; /* Text takes up the remaining space */
+  padding: 20px;
+  text-align: left; /* Align text to the left */
+  z-index: 1; /* Ensure the text stays above the blurred background */
+}
+
+.carousel-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.carousel-text p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Image styling */
+.carousel-item img {
+  width: 100%; /* 16:9 ratio for the image (16 / 9 = 1.777... => 100% / 1.777... = 56.25%) */
+  height: 70%; /* Make the image fill the height of the carousel */
+  object-fit: cover; /* Ensure the image covers the space without distortion */
+  object-position: center; /* Center the image within the carousel */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Transparent shadow around the image */
+  z-index: 1; /* Ensure the image stays above the blurred background */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 800px) {
+  .carousel-container {
+    max-width: 100%; /* Allow the carousel to take full width on mobile */
+    padding: 0 10px; /* Optional: Add some padding on sides */
+  }
+
+  .carousel-item-content {
+    flex-direction: column-reverse; /* Stack the image on top and text below on mobile */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Align items to center */
+    height: 400px; /* Keep fixed height for carousel */
+  }
+
+  .carousel-item img {
+    width: 100%; 
+    height: auto; /* Make the image fill the height of the carousel */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+    object-position: center; /* Center the image within the carousel */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Transparent shadow around the image */
+    z-index: 1; /* Ensure the image stays above the blurred background */
+  }
+
+  .carousel-text {
+    padding: 10px; /* Adjust padding on smaller screens */
+    text-align: left; /* Center text on mobile */
+  }
+}
