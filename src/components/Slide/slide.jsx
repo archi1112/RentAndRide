@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import './slide.css';  // Make sure this CSS file is correctly linked
+import './slide.css'; 
 
 function Slide() {
   return (
@@ -29,7 +29,7 @@ function Slide() {
               <p>Premium Fleet featuring luxury cars, and sedans for a comfortable ride.
                  Customizable Itineraries to suit your schedule and preferences.
                  24/7 Availability for flexible booking and travel convenience.
-                 Airport & Railway stationgit Pickup/Drop for added convenience and seamless transfers.</p>
+                 Airport & Railway station Pickup/Drop for added convenience and seamless transfers.</p>
             </div>
             <img
               className="d-block w-50"
