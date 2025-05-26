@@ -9,6 +9,7 @@ import Col from "react-bootstrap/Col";
 const PriceCard = ({
   title,
   dailyPrice,
+  dailyofferPrice, 
   weeklyPrice,
   weeklyOfferPrice,
   link,
@@ -30,7 +31,12 @@ const PriceCard = ({
               <Card.Text className="text-center">
                 <div>
                   <strong>Daily Price : </strong>{" "}
+                   <span className="text-decoration-line-through text-danger">
                   <FontAwesomeIcon icon={faRupeeSign} /> {dailyPrice}
+                   </span>
+                  {` `}
+                  <FontAwesomeIcon icon={faRupeeSign} /> {dailyofferPrice}
+                 
                 </div>
                 <div>
                   <strong>Weekly Price : </strong>{" "}

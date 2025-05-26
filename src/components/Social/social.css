@@ -1,0 +1,101 @@
+/* Instagram - Desktop */
+.instagram_float {
+    position: fixed;
+    width: 7.2vh;      
+    height: 7.2vh;     
+    bottom: 56vh;
+    right: 0;
+    background-color: #E1306C;
+    color: #FFF;
+    border-radius: 0;
+    text-align: center;
+    font-size: 3.9vh;   
+    box-shadow: 0.26vh 0.26vh 0.39vh #999; 
+    z-index: 100;
+}
+
+.instagram-icon {
+    margin-top: 2vh;   
+}
+
+/* WhatsApp - Desktop */
+.whatsapp_float {
+    position: fixed;
+    width: 7.2vh;
+    height: 7.2vh;
+    bottom: 48.5vh;
+    right: 0;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 0;
+    text-align: center;
+    font-size: 3.9vh;
+    box-shadow: 0.26vh 0.26vh 0.39vh #999;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 2vh;
+}
+
+/* Call - Desktop */
+.call_float {
+    position: fixed;
+    width: 7.2vh;
+    height: 7.2vh;
+    bottom: 41vh;
+    right: 0;
+    background-color: #2e25d3;
+    color: #FFF;
+    border-radius: 0;
+    text-align: center;
+    font-size: 3.9vh;
+    box-shadow: 0.26vh 0.26vh 0.39vh #999;
+    z-index: 100;
+}
+
+.call-icon {
+    margin-top: 2vh;
+}
+
+/* Review - Desktop */
+.review_float {
+    position: fixed;
+    width: 7.2vh;
+    height: 7.2vh;
+    bottom: 33.5vh;
+    right: 0;
+    background-color: #f8c146;
+    color: #FFF;
+    border-radius: 0;
+    text-align: center;
+    font-size: 3.9vh;
+    box-shadow: 0.26vh 0.26vh 0.39vh #999;
+    z-index: 100;
+}
+
+.review-icon {
+    margin-top: 2vh;
+}
+
+/*............................................ Mobile styles......................................... */
+@media screen and (max-width: 767px) {
+
+    .instagram_float {
+         bottom: 60vh;
+    }
+
+    .call_float {
+        bottom: 52.5vh;
+    }
+
+    .whatsapp_float {
+        bottom: 45vh;
+    }
+
+    .review_float {
+        bottom: 37.5vh;
+    }
+
+}
+/*.............................................End of Mobile styles.............................................*/

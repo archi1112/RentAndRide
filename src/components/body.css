@@ -7,8 +7,9 @@
 .sub-container {
   background-image: url("../../public/assets/back.webp");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 100vh;
+  /* background-size: 60% 100%; */
+  height: 80vh;
+  width:100vw;
 }
 
 .container {
@@ -16,7 +17,7 @@
 }
 
 .welcome-container {
-  margin-top: 10vh;
+  margin-top: 0vh;
 }
 
 .container h1,
@@ -32,15 +33,14 @@ h2 {
 
 @media (max-width: 768px) {
   .sub-container {
-    height: 40vh;
+    height: 80vh;
+    background-size: 100% 80%;
   }
 }
 
 @media (orientation: landscape) {
   .sub-container {
     background-size: contain;
-    /* Make the background image smaller */
     background-position: center center;
-    /* Center the background image horizontally and vertically */
   }
 }

@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import "./navbar.css";
 
 function NavbarContent() {
   window.onload = function () {
@@ -27,10 +28,11 @@ function NavbarContent() {
         fixed="top"
         key="md"
         expand="lg"
-        bg="dark"
-        data-bs-theme="dark"
+        bg="white"
+        data-bs-theme="light"
       >
         <Container fluid>
+          {/* <img src="/assets/logo.webp" alt=" " className="logo" /> */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Navbar.Offcanvas

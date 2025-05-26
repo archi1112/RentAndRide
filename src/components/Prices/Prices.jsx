@@ -11,8 +11,9 @@ function Prices() {
         <Col>
           <PriceCard
             title="Activa"
-            dailyPrice={500}
-            weeklyPrice={3500}
+            dailyPrice={600}
+            dailyofferPrice={500}
+            weeklyPrice={3600}
             weeklyOfferPrice={3080}
             link="/assets/activa.webp"
           />
@@ -21,8 +22,9 @@ function Prices() {
           <PriceCard
             title="Bike"
             dailyPrice={700}
+            dailyofferPrice={500}
             weeklyPrice={4900}
-            weeklyOfferPrice={4312}
+            weeklyOfferPrice={3080}
             link="/assets/bike.webp"
           />
         </Col>

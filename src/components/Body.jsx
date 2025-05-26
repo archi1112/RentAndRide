@@ -11,7 +11,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import About from "./About/About";
 import Slide from "./Slide/slide";
-
+import Social from "./Social/Social";
 
 
 
@@ -47,6 +47,7 @@ function Body() {
           <Location />
           <Contact />
           <About />
+          <Social/>
         </Container>
       </div>
     </React.Fragment>
