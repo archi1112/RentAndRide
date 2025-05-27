@@ -7,7 +7,7 @@
 .sub-container {
   background-image: url("../../public/assets/back.webp");
   background-repeat: no-repeat;
-  /* background-size: 60% 100%; */
+  background-size: 100% 80%;
   height: 80vh;
   width:100vw;
 }
@@ -34,7 +34,7 @@ h2 {
 @media (max-width: 768px) {
   .sub-container {
     height: 80vh;
-    background-size: 100% 80%;
+    background-size: 100% 80%
   }
 }
 
