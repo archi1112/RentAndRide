@@ -14,7 +14,7 @@ const Social = () => {
       <i className="fa fa-whatsapp whatsapp-icon"></i>
     </a>
     <a
-      href="https://www.instagram.com/rentandridejaipur/"
+      href="https://www.instagram.com/rent_and_ride_services/#"
       className="instagram_float"
       target="_blank"
       rel="noopener noreferrer"
